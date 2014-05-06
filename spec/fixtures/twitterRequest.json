@@ -1,0 +1,112 @@
+{
+   "id":23833641,
+   "id_str":"23833641",
+   "name":"NYCLU",
+   "screen_name":"NYCLU",
+   "location":"New York",
+   "description":"Looking for tweeps who read the paper, get angry, and want to take strategic action to protect the civil liberties of ALL New Yorkers. R U #TeamNYCLU?",
+   "url":"http:\/\/t.co\/zFBPXEEZcl",
+   "entities":{
+      "url":{
+         "urls":[
+            {
+               "url":"http:\/\/t.co\/zFBPXEEZcl",
+               "expanded_url":"http:\/\/www.nyclu.org",
+               "display_url":"nyclu.org",
+               "indices":[
+                  0,
+                  22
+               ]
+            }
+         ]
+      },
+      "description":{
+         "urls":[
+
+         ]
+      }
+   },
+   "protected":false,
+   "followers_count":14846,
+   "friends_count":1864,
+   "listed_count":730,
+   "created_at":"Wed Mar 11 21:27:54 +0000 2009",
+   "favourites_count":522,
+   "utc_offset":-18000,
+   "time_zone":"Quito",
+   "geo_enabled":true,
+   "verified":false,
+   "statuses_count":20087,
+   "lang":"en",
+   "status":{
+      "created_at":"Mon Apr 28 21:07:29 +0000 2014",
+      "id":460888053054459904,
+      "id_str":"460888053054459904",
+      "text":"PROOF that women who vote rule the world---&gt;http:\/\/t.co\/mmhlytea10 #UpgradeNY",
+      "source":"web",
+      "truncated":false,
+      "in_reply_to_status_id":null,
+      "in_reply_to_status_id_str":null,
+      "in_reply_to_user_id":null,
+      "in_reply_to_user_id_str":null,
+      "in_reply_to_screen_name":null,
+      "geo":null,
+      "coordinates":null,
+      "place":null,
+      "contributors":null,
+      "retweet_count":2,
+      "favorite_count":4,
+      "entities":{
+         "hashtags":[
+            {
+               "text":"UpgradeNY",
+               "indices":[
+                  70,
+                  80
+               ]
+            }
+         ],
+         "symbols":[
+
+         ],
+         "urls":[
+            {
+               "url":"http:\/\/t.co\/mmhlytea10",
+               "expanded_url":"http:\/\/wapo.st\/1nX7lel",
+               "display_url":"wapo.st\/1nX7lel",
+               "indices":[
+                  47,
+                  69
+               ]
+            }
+         ],
+         "user_mentions":[
+
+         ]
+      },
+      "favorited":false,
+      "retweeted":false,
+      "possibly_sensitive":false,
+      "lang":"en"
+   },
+   "contributors_enabled":false,
+   "is_translator":false,
+   "is_translation_enabled":false,
+   "profile_background_color":"3A7CC2",
+   "profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/5836045\/NYCLU_logo_color.jpg",
+   "profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/5836045\/NYCLU_logo_color.jpg",
+   "profile_background_tile":true,
+   "profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/3442861674\/9e141108bf8eb1747df13d5753f03f79_normal.jpeg",
+   "profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/3442861674\/9e141108bf8eb1747df13d5753f03f79_normal.jpeg",
+   "profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/23833641\/1392152587",
+   "profile_link_color":"3A7CC2",
+   "profile_sidebar_border_color":"FFFFFF",
+   "profile_sidebar_fill_color":"DDFFCC",
+   "profile_text_color":"333333",
+   "profile_use_background_image":true,
+   "default_profile":false,
+   "default_profile_image":false,
+   "following":true,
+   "follow_request_sent":false,
+   "notifications":false
+}

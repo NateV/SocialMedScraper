@@ -1,0 +1,44 @@
+//GET graph.facebook.com/NewYorkCivilLibertiesUnion
+
+{
+  "id": "106138222116", 
+  "about": "In a nutshell, if you are a New Yorker, we defend your civil rights, and we have been doing so since 1951.\n\nAnd yes, we are affiliated with the ACLU, they are our papa/mama.\n\nEnough said.\n\nNot enough said?\n\nWell then, go to www.nyclu.org for more.", 
+  "can_post": false, 
+  "category": "Non-profit organization", 
+  "category_list": [
+    {
+      "id": "2603", 
+      "name": "Non-Profit Organization"
+    }
+  ], 
+  "checkins": 188, 
+  "company_overview": "The New York Civil Liberties Union (NYCLU) is one of the nation's foremost defenders of civil liberties and civil rights.\n\nWe are a not-for-profit, nonpartisan organization with eight chapters and regional offices and nearly 50,000 members across the state.\n\n", 
+  "cover": {
+    "cover_id": "10151983478292117", 
+    "offset_x": 0, 
+    "offset_y": 50, 
+    "source": "https://scontent-a.xx.fbcdn.net/hphotos-prn1/t1.0-9/s720x720/1010689_10151983478292117_153350406_n.jpg"
+  }, 
+  "founded": "1951", 
+  "has_added_app": false, 
+  "is_community_page": false, 
+  "is_published": true, 
+  "likes": 10127, 
+  "link": "https://www.facebook.com/NewYorkCivilLibertiesUnion", 
+  "location": {
+    "city": "New York", 
+    "country": "United States", 
+    "latitude": 40.7023128192, 
+    "longitude": -74.0113158868, 
+    "state": "NY", 
+    "street": "125 Broad Street, 19th Floor", 
+    "zip": "10004"
+  }, 
+  "mission": "Our mission is to defend and promote the fundamental principles and values embodied in the Bill of Rights, the U.S. Constitution, and the New York Constitution, including freedom of speech and religion, and the right to privacy, equality and due process of law for all New Yorkers.\n", 
+  "name": "New York Civil Liberties Union - NYCLU", 
+  "phone": "(212) 607-3300", 
+  "talking_about_count": 347, 
+  "username": "NewYorkCivilLibertiesUnion", 
+  "website": "http://www.nyclu.org", 
+  "were_here_count": 188
+}
