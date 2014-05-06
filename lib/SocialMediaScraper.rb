@@ -6,7 +6,8 @@ require 'json'
 require 'oauth'
 require 'debugger'
 require 'csv'
-require '../secrets.rb' #this is a file with a hash of the api keys and secrets.
+require_relative '../secrets.rb' #this is a file with a hash of the api keys and secrets.
+require_relative '../assets/organizations.rb'
 
 class Scraper
 
@@ -26,9 +27,10 @@ class Scraper
     access_token
   end# of prepare_access_token
 
-  def organizations
-	JSON.parse(File.open(ARGV[0]).read)
-  end# of #organizations
+#   def organizations
+# 	JSON.parse(File.open(ARGV[0]).read)
+# 	
+#   end# of #organizations
   
   def facebook_scrape (facebook_screen_name)
     puts "Facebook scrape!"
@@ -53,9 +55,20 @@ class Scraper
      twitter_statuses_count: response["statuses_count"] }
   end# of #twitter_scrape
   
+  def print (results)
+    headers = results[0].keys
+    CSV.open("../scrapes/SMS-#{date.month}-#{date.day}-#{date.year}.csv","w") do |csv|
+      csv << headers
+      results.each do |hash|
+        csv << CSV::Row.new(hash.keys, hash.values)
+      end
+    end
+  end# of print
+  
+  
   def scrape
     date = Date.today
-    puts organizations
+    #puts organizations
     results = organizations.map do |organization|
       output = {date: "#{date.month}-#{date.day}-#{date.year}",
       			organization: organization["organization"]}
@@ -65,17 +78,12 @@ class Scraper
     puts results
     puts "and now to csv"
     
-    headers = results[0].keys
-    CSV.open("../scrapes/SMS-#{date.month}-#{date.day}-#{date.year}.csv","w") do |csv|
-      csv << headers
-      results.each do |hash|
-        csv << CSV::Row.new(hash.keys, hash.values)
-      end
-    end
+    #print(results)
+    results
     
   end# of #scrape
 
 end# of class
 
-scraper = Scraper.new
-scraper.scrape
+# scraper = Scraper.new
+# scraper.scrape

@@ -1,0 +1,12 @@
+def organizations 
+  JSON.parse('[{
+      "organization": "NYCLU",
+      "facebook_screen_name": "NewYorkCivilLibertiesUnion",
+      "twitter_screen_name": "NYCLU"
+    },{
+      "organization": "Center for Constitutional Rights",
+      "facebook_screen_name": "CenterforConstitutionalRights",
+      "twitter_screen_name": "theCCR"
+    }]')
+    
+end
