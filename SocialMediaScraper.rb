@@ -4,7 +4,6 @@ require 'uri'
 require 'date'
 require 'json'
 require 'oauth'
-require 'debugger'
 require 'csv'
 require './secrets.rb' #this is a file with a hash of the api keys and secrets.
 require './organizations.rb'
