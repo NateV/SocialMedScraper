@@ -1,5 +1,5 @@
 def organizations 
-  JSON.parse('[{  "
+  JSON.parse('[{
       "organization": "NYCLU",
       "facebook_screen_name": "NewYorkCivilLibertiesUnion",
       "twitter_screen_name": "NYCLU"
