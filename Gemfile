@@ -6,4 +6,7 @@ gem 'sinatra'
 gem 'rspec', '2.14.1'
 gem 'twitter'
 gem 'oauth'
-gem 'debugger'
+
+group :test, :development do
+  gem 'debugger'
+end

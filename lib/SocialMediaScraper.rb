@@ -66,7 +66,6 @@ class Scraper
   end# of print
   
   def self.as_csv(scrapes)
-    debugger
     result = ""
     headers = scrapes[0].keys
     headers.each_with_index do |key, i|
