@@ -7,5 +7,7 @@ end
 
 get '/stats.csv' do 
   scraper = Scraper.new
-  scraper.scrape
+  @results = scraper.scrape
+  @results = Scraper.as_csv(@results)
+  erb :stats_csv
 end

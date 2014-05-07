@@ -65,6 +65,28 @@ class Scraper
     end
   end# of print
   
+  def self.as_csv(scrapes)
+    debugger
+    result = ""
+    headers = scrapes[0].keys
+    headers.each_with_index do |key, i|
+      if i<(headers.count-1) then
+        result += "#{key}, "
+      else
+        result += "#{key} \n"
+      end
+    end
+    scrapes.each do |row|
+      row.values.each_with_index do |value, i|
+        if i<(row.values.count-1) then
+          result += "#{value}, "
+        else
+          result += "#{value} \n"
+        end
+      end
+    end
+    result
+  end# of as_csv
   
   def scrape
     date = Date.today
