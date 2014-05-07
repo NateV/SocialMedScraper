@@ -6,8 +6,8 @@ require 'json'
 require 'oauth'
 require 'debugger'
 require 'csv'
-require_relative '../secrets.rb' #this is a file with a hash of the api keys and secrets.
-require_relative '../assets/organizations.rb'
+require 'secrets.rb' #this is a file with a hash of the api keys and secrets.
+require 'organizations.rb'
 
 class Scraper
 

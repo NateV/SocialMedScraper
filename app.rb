@@ -1,5 +1,5 @@
 require 'sinatra'
-require_relative '../SocialMediaTracker/lib/SocialMediaScraper.rb'
+require './SocialMediaScraper.rb'
 
 get '/' do
   erb :index
