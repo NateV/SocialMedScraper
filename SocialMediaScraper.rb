@@ -5,7 +5,8 @@ require 'date'
 require 'json'
 require 'oauth'
 require 'csv'
-require './secrets.rb' #this is a file with a hash of the api keys and secrets.
+#require './secrets.rb' if File.exists?('secrets.rb')
+require './env.rb' if FileExists?('env.rb')
 require './organizations.rb'
 
 class Scraper
@@ -13,7 +14,7 @@ class Scraper
   #for twitter:
   # Exchange your oauth_token and oauth_token_secret for an AccessToken instance.
   def prepare_access_token(oauth_token, oauth_token_secret)
-    consumer = OAuth::Consumer.new(API_SECRETS.api_secrets[:TWITTER_API_KEY],API_SECRETS.api_secrets[:TWITTER_API_SECRET],
+    consumer = OAuth::Consumer.new(ENV[API_SECRETS][:TWITTER_API_KEY],ENV[API_SECRETS][:TWITTER_API_SECRET],
        { :site => "https://api.twitter.com",
          :scheme=> :header 
        })
@@ -44,7 +45,7 @@ class Scraper
   
   def twitter_scrape (twitter_screen_name)
     puts "Scraping twitter!"
-    access_token = prepare_access_token(API_SECRETS.api_secrets[:TWITTER_ACCESS_TOKEN],API_SECRETS.api_secrets[:TWITTER_ACCESS_TOKEN_SECRET])
+    access_token = prepare_access_token(ENV[API_SECRETS][:TWITTER_ACCESS_TOKEN],ENV[API_SECRETS][:TWITTER_ACCESS_TOKEN_SECRET])
 	response = access_token.request(:get, "https://api.twitter.com/1.1/users/show.json?screen_name=#{twitter_screen_name}")
 	response = JSON.parse(response.body)
     {twitter_followers_count: response["followers_count"],
