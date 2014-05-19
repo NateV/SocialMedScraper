@@ -1,0 +1,27 @@
+<h2> Custom groups! </h2>
+
+<div> 
+ Use this form to scrape Facebook and Twitter profiles for any group.
+ Enter the organization information into the box. Use valid format for a JSON Array:
+ <div> 
+   <code>
+    <div> [{
+      "organization": "NYCLU",
+      "facebook_screen_name": "NewYorkCivilLibertiesUnion",
+      "twitter_screen_name": "NYCLU"
+    }, </div>
+    <div> {
+      "organization": "Center for Constitutional Rights",
+      "facebook_screen_name": "CenterforConstitutionalRights",
+      "twitter_screen_name": "theCCR"
+    }] </div>
+   </code>
+ </div>
+ To check if your text is valid JSON, you can use <a href=http://jsonlint.com/> this site </a>
+</div>
+
+<form action="/customOrgs" method="post">
+  <label for="organizations"> Enter organizations here, in valid JSON format. </label>
+  <textarea name="organizations" rows="20" cols="60"> </textarea>
+  <input type="submit" value="Scrape!"> 
+</form>
